@@ -11,7 +11,7 @@ const autoCompleteConfig = {
         return movie.Title;
     },
     async fetchData(searchTerm) { //receive value from input as an argument to fetchData function
-        const response = await axios.get('http://www.omdbapi.com', {
+        const response = await axios.get('https://www.omdbapi.com', {
             params: { //query string parameters we want to pass along with the request; these will be appended to end of above URL
                 apikey: '891aad2f',
                 s: searchTerm 
